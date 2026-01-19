@@ -1,0 +1,81 @@
+
+.invoice-modal {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    margin: auto;
+}
+
+.invoice-modal h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.invoice-modal p.address {
+    text-align: center;
+    font-style: italic;
+    color: #555;
+    margin-top: 0;
+}
+
+.invoice-modal p.customer-info {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.invoice-modal p.customer-info span {
+    color: #2a5298;
+    font-weight: bold;
+}
+
+
+.invoice-modal table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.invoice-modal table th {
+    background: #2a5298;
+    color: #fff;
+    padding: 8px;
+}
+
+.invoice-modal table td {
+    text-align: center;
+    padding: 8px;
+}
+
+.invoice-modal table tr.total-row {
+    font-weight: bold;
+    background: #f4f6f9;
+}
+
+.invoice-modal p.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: #555;
+}
+
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    .invoice-modal, .invoice-modal * {
+        visibility: visible;
+    }
+    .invoice-modal {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        box-shadow: none;
+        padding: 0;
+    }
+}
