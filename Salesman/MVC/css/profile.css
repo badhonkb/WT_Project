@@ -1,0 +1,135 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+}
+
+
+.header {
+    background: #1e3c72;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header a.logout {
+    color: #ffcd00;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+.sidebar {
+    width: 220px;
+    background: #2a5298;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: #16325c;
+}
+
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.content h2 {
+    color: #1e3c72;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+
+.profile-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+.change-password {
+    margin-top: 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.05);
+    max-width: 400px;
+}
+
+.change-password h3 {
+    color: #1e3c72;
+    margin-bottom: 15px;
+}
+
+.change-password label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.change-password input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.change-password button {
+    padding: 10px 18px;
+    background: #1e3c72;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.change-password button:hover {
+    background: #16325c;
+}
+
+
+.notification {
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.notification.success {
+    background: #28a745;
+    color: white;
+}
+
+.notification.error {
+    background: #dc3545;
+    color: white;
+}
